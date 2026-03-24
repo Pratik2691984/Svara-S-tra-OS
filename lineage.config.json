@@ -1,0 +1,10 @@
+```json
+{
+  "lineage": "Kirana Gharana",
+  "sovereignty_key": "SHA256_HASH_OF_GURU_SIGNATURE",
+  "data_vault_uri": "ipfs://QmYourUniqueHash",
+  "royalties": {
+    "wallet": "0xYourWalletAddress",
+    "percentage": 5.0
+  }
+}
