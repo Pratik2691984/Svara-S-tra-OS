@@ -1,0 +1,21 @@
+name: "Dharma Check: Svara-Sūtra OS Validation"
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-vijnanamaya:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 20
+        cache: 'npm'
+    - run: npm ci
+    - run: npx playwright install --with-deps
+    - name: Run 22-Shruti & Ethics Tests
+      run: npx playwright test
+      
