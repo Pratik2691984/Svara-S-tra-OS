@@ -1,0 +1,55 @@
+# --- 1. Standard Node/Next.js ---
+node_modules/
+.next/
+out/
+build/
+dist/
+.env*.local
+npm-debug.log*
+yarn-error.log*
+.vercel
+
+# --- 2. AI & Machine Learning (TensorFlow.js) ---
+# Ignore large raw datasets, keep only the sharded model weights if necessary
+data/raw/
+data/processed/
+*.h5
+*.keras
+checkpoint/
+# If you use python for pre-processing
+__pycache__/
+*.py[cod]
+
+# --- 3. Audio & Media ---
+# Ignore raw audio recordings used for training
+*.wav
+*.mp3
+*.flac
+*.aac
+# Ignore heavy DSP cache files
+.pnpm-debug.log*
+
+# --- 4. OS & IDE Specific ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# --- 5. Playwright (Testing) ---
+# Ignore test results and trace files
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# --- 6. Dharma-Sovereignty (Security) ---
+# NEVER commit private keys or lineage signature files
+secrets/
+*.pem
+*.key
+config/private.*
