@@ -1,0 +1,25 @@
+{
+  "name": "svara-sutra-os",
+  "version": "1.0.0-ananda",
+  "description": "Vedic-Quantum Intelligence for Sacred Music",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "playwright test",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "three": "^0.160.0",
+    "@tensorflow/tfjs": "^4.15.0",
+    "tone": "^14.7.77"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "typescript": "^5.0.0"
+  }
+}
